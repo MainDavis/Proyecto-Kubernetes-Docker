@@ -6,9 +6,11 @@ RUN apt-get update
 
 COPY fileManagerServer /
 EXPOSE 3301
-COPY failasafe.sh /
+COPY failsafe.sh /
 
-RUN chmod +x /failasafe.sh
+RUN mkdir dirpruebaServidor
+
+RUN chmod +x /failsafe.sh
 RUN chmod +x /fileManagerServer
 
 CMD sh /failsafe.sh

@@ -15,4 +15,4 @@ spec:
   spec:
    containers:
     - name: kubernetes-practica2fm
-      image: hugoroman/filemanager_ubuntu:1.0
+      image: maindavis/filemanager_ubuntu:1.0
