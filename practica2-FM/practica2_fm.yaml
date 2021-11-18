@@ -4,7 +4,7 @@ metadata:
  name:  kubernetes-practica2fm
  namespace: default
 spec:
- replicas: 1
+ replicas: 3
  selector:
   matchLabels:
    app: practica2_fm
@@ -16,3 +16,11 @@ spec:
    containers:
     - name: kubernetes-practica2fm
       image: maindavis/filemanager_ubuntu:1.0
+      volumeMounts:
+        - mountPath: /dirServer
+          name: dir-volume
+   volumes:
+    - name: dir-volume
+      hostPath:
+        path: /home/davis/Escritorio/GitHub/PSD1-PRACTICA-2/practica2-FM/dirServer
+        type: Directory
