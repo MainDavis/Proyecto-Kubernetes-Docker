@@ -23,4 +23,4 @@ spec:
     - name: dir-volume
       hostPath:
         path: /home/davis/Escritorio/GitHub/PSD1-PRACTICA-2/practica2-FM/dirServer
-        type: Directory
+        type: DirectoryOrCreate
