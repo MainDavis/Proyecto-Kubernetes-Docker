@@ -1,17 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-name:  kubernetes-practica2_mult
-namespace: default
+ name:  kubernetes-practica2multm
+ namespace: default
 spec:
-replicas: 1
-matchLabels:
-app: practica2_mult
-template:
-metadata:
-labels:
-app: practica2_mult
-spec:
-containers:
-- name: kubernetes-practica2_mult
-image: /hugoroman/multmatrix_ubuntu:1.0
+ replicas: 3
+ selector:
+  matchLabels:
+   app: practica2_multm
+ template:
+  metadata:
+   labels:
+     app: practica2_multm
+  spec:
+   containers:
+    - name: kubernetes-practica2multm
+      image: maindavis/multmatrix_ubuntu:1.0
+     
