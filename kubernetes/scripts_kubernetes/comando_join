@@ -1,2 +1,2 @@
-kubeadm join 10.1.201.105:6443 --token d2lpfd.oshkz0dt79ucu49y \
-	--discovery-token-ca-cert-hash sha256:330002d839de3c85e3a33dbb8ee9129307b8ac0812a1d2aad630be8e27181278 
+kubeadm join 192.168.167.71:6443 --token l0ha51.6ltlcfyen2f6d5l7 \
+	--discovery-token-ca-cert-hash sha256:48f99f5f527109fdc39b3ffff4e1f8eef95acdfe0e73d12103725f227c2fd3eb 
