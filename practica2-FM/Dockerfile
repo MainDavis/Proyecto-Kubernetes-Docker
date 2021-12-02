@@ -8,8 +8,6 @@ COPY fileManagerServer /
 EXPOSE 3301
 COPY failsafe.sh /
 
-RUN mkdir dirpruebaServidor
-
 RUN chmod +x /failsafe.sh
 RUN chmod +x /fileManagerServer
 

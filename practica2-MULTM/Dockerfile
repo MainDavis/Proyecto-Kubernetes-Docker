@@ -6,9 +6,10 @@ RUN apt-get update
 
 COPY multMatrixServer /
 EXPOSE 3301
-COPY failasafe.sh /
+COPY failsafe.sh /
 
-RUN chmod +x /failasafe.sh
+RUN chmod +x /failsafe.sh
 RUN chmod +x /multMatrixServer
 
 CMD sh /failsafe.sh
+

@@ -10,5 +10,5 @@ spec:
   ports:
   - port: 3301
     targetPort:  3301
-    nodePort: 33002
-externalTrafficPolicy:  Cluster
+    nodePort: 32002
+  externalTrafficPolicy:  Cluster
