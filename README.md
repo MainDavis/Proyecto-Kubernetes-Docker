@@ -1,3 +1,1 @@
-# PSD1-PRACTICA-2
- 
-Práctica de Sistemas Distribuidos
+# Proyecto donde se implementa el proyecto de programación distribuida usando Kubernetes y Docker.
